@@ -6,11 +6,19 @@
 
 class Supervisor : public Persona
 {
+    private:
+        String barrio;
+        int manzana;
+
     public:
         Supervisor();
+        Supervisor(int,string,string,int);
+        string getBarrio();
+        int getManzana();
+        void listarSupervisor();
+        void getTipoPersona();
         virtual ~Supervisor();
-    protected:
-    private:
+
 };
 
 #endif // SUPERVISOR_H

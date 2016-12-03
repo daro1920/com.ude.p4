@@ -31,6 +31,24 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="CapaLogica.cpp" />
+		<Unit filename="CapaLogica.h" />
+		<Unit filename="Fijo.cpp" />
+		<Unit filename="Fijo.h" />
+		<Unit filename="Iterador.cpp" />
+		<Unit filename="Iterador.h" />
+		<Unit filename="Persona.cpp" />
+		<Unit filename="Persona.h" />
+		<Unit filename="Supervisor.cpp" />
+		<Unit filename="Supervisor.h" />
+		<Unit filename="Supervisores.cpp" />
+		<Unit filename="Supervisores.h" />
+		<Unit filename="Vendedor.cpp" />
+		<Unit filename="Vendedor.h" />
+		<Unit filename="Vendedores.cpp" />
+		<Unit filename="Vendedores.h" />
+		<Unit filename="Zafral.cpp" />
+		<Unit filename="Zafral.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
