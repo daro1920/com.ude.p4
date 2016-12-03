@@ -7,15 +7,15 @@
  }
  void Iterador :: insertar (Persona * per) {
 
-     Nodo * nuevo = new Nodo;
-     nuevo -> info = per;
-     nuevo -> sig = NULL;
+     Nodo * ite = new Nodo;
+     ite -> info = per;
+     ite -> sig = NULL;
      if (prim == NULL) {
-         prim = nuevo;
-         ulti = nuevo;
-         actual = nuevo;
+         prim = ite;
+         ulti = ite;
+         actual = ite;
      } else {
-         ulti -> sig = nuevo;
+         ulti -> sig = ite;
          ulti = ulti -> sig;
      }
  }
