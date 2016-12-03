@@ -3,6 +3,7 @@
      prim = NULL;
      ulti = NULL;
      actual = NULL;
+
  }
  void Iterador :: insertar (Persona * per) {
 
