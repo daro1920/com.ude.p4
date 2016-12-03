@@ -1,7 +1,7 @@
 #include "Iterador.h"
  Iterador :: Iterador () {
-     prim = NULL;
-     ulti = NULL;
+     first = NULL;
+     last = NULL;
      actual = NULL;
 
  }
