@@ -7,19 +7,23 @@ class Supervisores
 {
     private:
 //        hSupervisor: Hash
-    typedef struct nodoL { Supervisor info;
-                           nodoL * sig;
-                        } Nodo;
-    typedef Nodo * Lista;
-    typedef Lista Hash[B];
+        struct nodo{ Supervisor * info;
+                    nodoL * sig;
+                    } ;
+        Nodo * hSupervisores[B];
+
+        int h (int);
+        void crearLista(Nodo * &);
+        void destruirLista(Nodo * &);
+        boolean PerteneceLista(Nodo *, int);
+        void insFrontEnLista(Nodo * &, Supervisor *);
+        Supervisor * obtenerEnLista(nodo *,int);
 
     public:
         Supervisores();
         boolean member(int);
-        void insert(Supervisor);
-        Supervisor find(int);
-        void modify(int);
-        void delete(int);
+        void insert(Supervisor *);
+        Supervisor * find(int);
         iterator listarSupervisores();
         ~Supervisores();
 

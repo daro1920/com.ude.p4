@@ -1,26 +1,34 @@
 #include "Supervisores.h"
 
-   private:
-        hSupervisor: Hash
 
-    public:
-        Supervisores();
-        boolean member(int);
-        void insert(Supervisor);
-        Supervisor find(int);
-        void modify(int);
-        void delete(int);
-        iterator listarSupervisores();
-        ~Supervisores();
+int Supervisores::h(int num)
+{
+    return (num % B);
+}
 
-//crearLista()
+void Supervisores::crearLista(Nodo * &L)
+{
+    L = NULL;
+}
 
-boolean PerteneceLista(Lista L, int cedula)
+void Supervisores::destruirLista(Nodo * &L)
+{
+    Nodo * aux = L;
+    while (aux != NULL)
+    {
+        L = aux->sig;
+        delete (aux);
+        aux = L;
+    }
+    L = aux;
+}
+
+Supervisores::PerteneceLista(Nodo * L, int cedula)
 {
     boolean esta = false;
     while (!esta && L != NULL)
     {
-        if (cedula == getCedula (L -> info))
+        if (cedula == L -> info->getCedula())
             esta = true;
         else
             L = L -> sig;
@@ -28,38 +36,56 @@ boolean PerteneceLista(Lista L, int cedula)
     return esta;
 }
 
-Supervisores::Supervisores(Hash &H)
+void Supervisores::insFrontEnLista(nodo * &L,Supervisor * sup)
+{
+    Nodo * aux = new Nodo;
+    aux->info = sup;
+    aux->sig = L;
+    L = aux;
+}
+
+Supervisor * Supervisores:: obtenerEnLista(nodo * L,int ced)
+{
+    while (L->info->getCedula() != ced)
+        L = L->sig;
+    return(L->info);
+}
+///////////////////////
+
+Supervisores::Supervisores()
 {
     //  crear diccionario vacio
     for(int i=0;i<B;i++)
-        CrearLista(H[i]);
-
+        CrearLista(hSupervisores[i]);
 }
 
-boolean member(Hash H, K clave)
+Supervisores::~Supervisores()
+{
+    //  crear diccionario vacio
+    for(int i=0;i<B;i++)
+        destruirLista(hSupervisores[i]);
+}
+
+boolean Supervisores::member(int ced)
 {
     int cubeta = h(clave);
-    return PerteneceLista (H[cubeta],clave);
+    return PerteneceLista (hSupervisores[cubeta],ced);
 }
 
 //Precondición: !member(H,DarClave(e))
-void Insertar (Hash &H, Supervisor s)
+void Supervisores::insert(Supervisor * s)
 {
-    K clave = DarClave(s);
-    int cubeta = h(clave);
-    Insfront (H[cubeta],s);
+    int ced = s->getCedula();
+    int cubeta = h(ced);
+    insFrontEnLista(hSupervisores[cubeta],s);
 }
 
 //Precondición: !Pertenece(H,DarClave(e))
-T Obtener (Hash H, K clave)
+Supervisor * Supervisores::find(int ced)
 {
-    int cubeta = h(clave);
-    return ObtenerEnLista (H[cubeta],clave);
+    int cubeta = h(ced);
+    return ObtenerEnLista (hSupervisores[cubeta],ced);
 }
-//Precondición: !Pertenece(H,DarClave(e))
-void Eliminar (Hash &H, K clave)
-{
-    int cubeta = h(clave);
-    BorrarEnLista (H[cubeta],clave);
-}
+
+
 
