@@ -1,11 +1,19 @@
 #include "Persona.h"
+#include <iostream>
+using namespace std;
 
-Persona::Persona()
-{
-    //ctor
-}
 
-Persona::~Persona()
-{
-    //dtor
+Persona:: Persona(int ced,String nom):nombre(nom){
+    cedula= ced;
 }
+int Persona::getCedula() {
+    return cedula;
+}
+String Persona::getNombre() {
+    return nombre;
+}
+void Persona::listarPersona() {
+    cout << "\n Cedula" << cedula ;
+    cout << "\n Nombre " ; nombre.print() ;
+}
+Persona:: ~Persona(){}

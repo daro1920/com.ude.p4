@@ -8,10 +8,11 @@ int main() {
 
     printf ("\n Bienvenido al programa de registro y control de vendedores ");
 
+    int opcion1 ;
     bool termino = false;
 
     CapaLogica capaLogica();
-    Menu menu();
+    Menu menu;
     menu.menu1(opcion1);
     while(opcion1 != 7 && !termino) {
         switch (opcion1) {
@@ -36,7 +37,7 @@ int main() {
                 break;
         }
 
-        menu1(opcion1);
+        menu.menu1(opcion1);
 
     }
 

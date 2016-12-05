@@ -1,11 +1,13 @@
 #include "Iterador.h"
- Iterador :: Iterador () {
-     first = NULL;
-     last = NULL;
+
+
+ Iterador :: Iterador() {
+     prim = NULL;
+     ulti = NULL;
      actual = NULL;
 
  }
- void Iterador :: insertar (Persona * per) {
+ void Iterador :: insertar(Persona * per) {
 
      Nodo * ite = new Nodo;
      ite -> info = per;
@@ -19,11 +21,12 @@
          ulti = ulti -> sig;
      }
  }
- boolean Iterador :: hayMasDuenios () {
-    return (boolean) (actual != NULL);
+ bool Iterador :: hayMasPersonas() {
+    return (bool) (actual != NULL);
  }
- Persona * Iterador :: proximoDuenio () {
-     Persona resu = actual -> info;
+ Persona * Iterador :: proximaPersona() {
+     Persona* resu = actual -> info;
      actual = actual -> sig;
      return resu;
  }
+ Iterador :: ~Iterador (){}

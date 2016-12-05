@@ -1,10 +1,13 @@
 #ifndef _Iterador_H
 #define _Iterador_H
 #include "Persona.h"
+#include <stdio.h>
+
 class Iterador
 {
     private:
-        struct Nodo { Persona * info;
+        struct Nodo {
+            Persona * info;
             Nodo * sig;
         };
         Nodo * prim;
@@ -15,9 +18,9 @@ class Iterador
         // constructor por defecto
         void insertar (Persona *);
         // inserta una persona en el iterador
-        boolean hayMasDuenios ();
+        bool hayMasPersonas ();
         // determina si quedan personas por visitar en el iterador
-        Persona * proximoDuenio ();
+        Persona * proximaPersona ();
         // retorna la proxima persona por visitar en el iterador
         ~Iterador ();
         // destructor
