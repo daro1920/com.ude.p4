@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef MENU_H
 #define MENU_H
 #include <stdio.h>
@@ -10,3 +11,5 @@ class Menu
 };
 
 #endif // MENU_H
+
+#endif

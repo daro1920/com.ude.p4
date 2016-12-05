@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef FECHA_H
 #define FECHA_H
 
@@ -21,4 +22,6 @@ class Fecha
         int operator -(Fecha );
         bool esValida();
 };
+#endif
+
 #endif

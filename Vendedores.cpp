@@ -79,10 +79,8 @@ int Vendedores:: getMontoTotal() {
 }
 
 
-Iterador Vendedores:: getIteradorVendedores() {
-    Iterador iter;
-    cargarIterador (ABB, iter);
-    return iter;
+void Vendedores:: getIteradorVendedores( Iterador &iterVendedores) {
+    cargarIterador (ABB, iterVendedores);
 }
 
 

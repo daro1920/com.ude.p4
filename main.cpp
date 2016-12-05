@@ -8,7 +8,7 @@
 int main() {
 
     printf ("\n Bienvenido al programa de registro y control de vendedores ");
-
+    
     int opcion1 ;
     bool termino = false;
 
@@ -17,48 +17,51 @@ int main() {
                 string baro = "la blanqueada";
                 int mano = 7;
                 bool error;
-Iterador iter;
 int k=0;
 
-    CapaLogica capaLogica();
+    Iterador iterSupervisores;
+    Iterador iterVendedores;
+    Vendedor * vend;
+
+    CapaLogica capaLogica;
     Menu menu;
     menu.menu1(opcion1);
     while(opcion1 != 9 && !termino) {
         switch (opcion1) {
             case 1:  // ingresar un supervisor
-
-
-                CapaLogica().nuevoSupervisor(123,"primer supervisor","primer barrio",11,error) ;
-                CapaLogica().nuevoSupervisor(234,"segundor supervisor","segundo barrio",12,error) ;
-
-                CapaLogica().nuevoSupervisor(345,"tercero supervisor","prtercerobarrio",13,error) ;
+                capaLogica.nuevoSupervisor(1122,"Barrios","PeÒarol",10,error) ;
+                capaLogica.nuevoSupervisor(5566,"Lopez","Union",8,error) ;
 
                     break;
             case 2:  // ingresar un vendedor
+                capaLogica.nuevoVendedorFijo(3111,"Vendedor1",2000,40,1.5,1122,error) ;
+                capaLogica.nuevoVendedorZafral(4111,"Vendedor2",3500,25,10,Fecha(),5566,error) ;
                     break;
             case 3:  // listar supervisores
-   printf("veremos que pasa \n");
-                           printf("\n nimero %d",k);
-
-//                    Iterador iter;
-
-                    iter = CapaLogica().getIteradorSupervisores();
-                    while (iter.hayMasPersonas()){
-                        Persona * sup = iter.proximaPersona();
+                    capaLogica.getIteradorSupervisores(iterSupervisores);
+                    while (iterSupervisores.hayMasPersonas()){
+                        Persona * sup = iterSupervisores.proximaPersona();
                         sup->listarPersona();
-                        k++;
-                        printf("\n nimero %d",k);
                     }
 
-    printf("\n no pasa ");
-    while(opcion1 != 9 )
-    {
-             switch (opcion1);
-    };
                     break;
-            case 4:  // finalizar partida
+            case 4:  // listar vendedores
+                capaLogica.getIteradorVendedores(iterVendedores);
+                while (iterVendedores.hayMasPersonas()){
+                    Persona * vend = iterVendedores.proximaPersona();
+                    vend->listarPersona();
+                }
                     break;
-            case 5:  // listar los jugadores por departamento
+            case 5:  // listar vendedor con supervisor
+                vend = capaLogica.getVendedor(3111,error);
+                if(!error){
+                    vend->listarPersona();
+                    Supervisor * sup = vend->getSupervisor();
+                    sup->listarPersona();
+                    
+                }else{
+                    printf("\nNo existe vendedor");
+                }
                     break;
             case 6:  // listar los jugadores por departamento
                     break;

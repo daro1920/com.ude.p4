@@ -13,7 +13,7 @@ String Supervisor:: getTipoPersona(){
 
 void Supervisor:: listarPersona() {
         Persona::listarPersona();
-//        cout << "" ; barrio.print();
+        cout << " - " ; barrio.print();
         cout << " - ";
         cout << manzana;
 }

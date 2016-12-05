@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+
+
 #include <stdio.h>
 
 #ifndef STRING_H
@@ -6,8 +9,7 @@
  const int MAX = 80;
  typedef char * string;
 
-class String
-{
+class String {
     private:
         string cadena;
 
@@ -41,3 +43,7 @@ class String
         // muestra un string en la salida estándar
 };
  #endif
+
+
+// É
+#endif

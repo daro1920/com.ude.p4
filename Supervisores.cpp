@@ -45,6 +45,7 @@ void Supervisores::insFrontEnLista(nodo * &L,Supervisor * sup)
     aux->info = sup;
     aux->sig = L;
     L = aux;
+
 }
 
 Supervisor * Supervisores:: obtenerEnLista(nodo * L,int ced)
@@ -81,6 +82,7 @@ void Supervisores::insert(Supervisor * s)
 {
     int ced = s->getCedula();
     int cubeta = h(ced);
+
     insFrontEnLista(hSupervisores[cubeta],s);
 }
 
@@ -97,10 +99,8 @@ void Supervisores::cargarIterador ( Iterador &iter) {
     }
 }
 
-Iterador Supervisores::getIteradorSupervisores(){
-    Iterador iter;
-    cargarIterador ( iter);
-    return iter;
+void Supervisores::getIteradorSupervisores( Iterador &iterSupervisores){
+    cargarIterador ( iterSupervisores);
 }
 
 void Supervisores::cargarLista(nodo * L,Iterador &iter)

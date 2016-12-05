@@ -30,11 +30,11 @@ class Vendedores
     public:
         Vendedores();
         bool member(int);
-        bool insert(Vendedor *);
+        void insert(Vendedor *);
         Vendedor * find(int);
         void modify(int);
         int getMontoTotal();
-        Iterador getIteradorVendedores();
+        void getIteradorVendedores(Iterador &);
 
 };
 

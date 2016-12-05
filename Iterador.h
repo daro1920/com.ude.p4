@@ -1,3 +1,5 @@
+
+#ifdef __cplusplus
 #ifndef _Iterador_H
 #define _Iterador_H
 #include "Persona.h"
@@ -25,4 +27,5 @@ class Iterador
         ~Iterador ();
         // destructor
 };
+#endif
 #endif

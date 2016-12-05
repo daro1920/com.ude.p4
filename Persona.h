@@ -1,3 +1,5 @@
+#ifdef __cplusplus
+
 #ifndef PERSONA_H
 #define PERSONA_H
 #include "String.h"
@@ -19,3 +21,5 @@ class Persona
 };
 
 #endif // PERSONA_H
+
+#endif

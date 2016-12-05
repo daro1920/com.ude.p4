@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef SUPERVISOR_H
 #define SUPERVISOR_H
 #include "String.h"
@@ -21,3 +22,5 @@ class Supervisor : public Persona
 };
 
 #endif // SUPERVISOR_H
+
+#endif

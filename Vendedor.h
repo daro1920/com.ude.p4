@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef VENDEDOR_H
 #define VENDEDOR_H
 
@@ -24,3 +25,5 @@ class Vendedor : public Persona
 };
 
 #endif // VENDEDOR_H
+
+#endif

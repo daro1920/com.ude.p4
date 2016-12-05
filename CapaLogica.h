@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef CAPALOGCA_H
 #define CAPALOGCA_H
 #include "Supervisores.h"
@@ -18,8 +19,8 @@ class CapaLogica
         void nuevoSupervisor(int ,String ,String ,int ,bool &);
         void nuevoVendedorFijo(int ,String ,float ,int ,float ,int ,bool &);
         void nuevoVendedorZafral(int ,String ,float ,int ,float ,Fecha ,int ,bool &);
-        Iterador getIteradorSupervisores();
-        Iterador getIteradorVendedores();
+        void getIteradorSupervisores(Iterador &);
+        void getIteradorVendedores(Iterador &);
         Vendedor * getVendedor(int,bool &);
         void regCantVentas(int,int,bool &);
         float  montoPagar();
@@ -28,3 +29,4 @@ class CapaLogica
 };
 
 #endif // CAPALOGCA_H
+#endif

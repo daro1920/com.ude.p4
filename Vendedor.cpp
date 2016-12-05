@@ -25,7 +25,8 @@ using namespace std;
         Persona::listarPersona();
         cout << sueldosBase;
         cout << cantVentas;
-        supervisor->listarPersona();
+        getTipoVendedor().print();
+        //supervisor->listarPersona();
     }
 
     String Vendedor:: getTipoPersona(){

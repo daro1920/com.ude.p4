@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef SUPERVISORES_H
 #define SUPERVISORES_H
 #include "Supervisor.h"
@@ -30,10 +31,12 @@ class Supervisores
         bool member(int);
         void insert(Supervisor *);
         Supervisor * find(int);
-        Iterador getIteradorSupervisores();
+        void getIteradorSupervisores( Iterador &);
 
         ~Supervisores();
 
 };
 
 #endif // SUPERVISORES_H
+
+#endif

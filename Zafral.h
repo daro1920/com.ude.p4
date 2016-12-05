@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef ZAFRAL_H
 #define ZAFRAL_H
 
@@ -21,3 +22,5 @@ class Zafral : public Vendedor {
 };
 
 #endif // ZAFRAL_H
+
+#endif

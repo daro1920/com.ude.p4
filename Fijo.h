@@ -1,3 +1,4 @@
+#ifdef __cplusplus
 #ifndef FIJO_H
 #define FIJO_H
 #include <stdio.h>
@@ -20,3 +21,5 @@ class Fijo : public Vendedor
 };
 
 #endif // FIJO_H
+
+#endif
