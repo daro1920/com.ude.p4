@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1480897594 source:c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.cpp
 	"CapaLogica.h"
 
-1480892636 c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.h
 	"Supervisores.h"
 	"Vendedores.h"
 	"Vendedor.h"
@@ -11,89 +11,89 @@
 	"Zafral.h"
 	"Iterador.h"
 
-1480889086 c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.h
+1480904799 c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.h
 	"Supervisor.h"
 	"Iterador.h"
 
-1480889728 c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.h
+1480904762 c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.h
 	"String.h"
 	"Persona.h"
 
-1480903418 c:\ude\2do\p4\obligatorio\com.ude.p4\string.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\string.h
 	<stdio.h>
 
-1480900633 c:\ude\2do\p4\obligatorio\com.ude.p4\persona.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\persona.h
 	"String.h"
 	<stdio.h>
 
-1480898414 c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.h
 	"Persona.h"
 	<stdio.h>
 
-1480897485 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.h
 	"Vendedor.h"
 	"Iterador.h"
 
-1480903666 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.h
 	"Persona.h"
 	"Supervisor.h"
 
-1480893534 c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.h
 
-1480898316 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
 	<stdio.h>
 	"Vendedor.h"
 
-1480890901 c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.h
 	"Vendedor.h"
 	"Fecha.h"
 
-1480904175 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
 	"Fecha.h"
 
-1480903730 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
 	"Fijo.h"
 	<iostream>
 
-1480898439 source:c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.cpp
 	"Iterador.h"
 
-1480899984 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
+1480904511 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"CapaLogica.h"
 	"Menu.h"
 	"CapaLogica.h"
 
-1480900005 c:\ude\2do\p4\obligatorio\com.ude.p4\menu.h
+1480904510 c:\ude\2do\p4\obligatorio\com.ude.p4\menu.h
 	<stdio.h>
 
-1480887240 source:c:\ude\2do\p4\obligatorio\com.ude.p4\menu.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\menu.cpp
 	"Menu.h"
 
-1480900759 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
 	"Persona.h"
 	<iostream>
 
-1480904328 source:c:\ude\2do\p4\obligatorio\com.ude.p4\string.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\string.cpp
 	"String.h"
 	<iostream>
 	"String.h"
 
-1480889731 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.cpp
+1480905000 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.cpp
 	"Supervisor.h"
 
 1480903627 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.cpp
 	"Supervisores.h"
 
-1480903916 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
 	"Vendedor.h"
 	<iostream>
 
-1480904034 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.cpp
 	"Vendedores.h"
 
-1480904132 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
+1480904510 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
 	"Zafral.h"
 	<iostream>
 

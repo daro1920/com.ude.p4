@@ -20,6 +20,7 @@ class Supervisores
         void destruirLista(nodo * &);
         bool PerteneceLista(nodo *, int);
         void insFrontEnLista(nodo * &, Supervisor *);
+
         Supervisor * obtenerEnLista(nodo *,int);
 
     public:
@@ -28,6 +29,7 @@ class Supervisores
         void insert(Supervisor *);
         Supervisor * find(int);
         Iterador listarSupervisores();
+
         ~Supervisores();
 
 };

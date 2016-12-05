@@ -7,6 +7,7 @@ int Supervisores::h(int num)
 }
 
 void Supervisores::crearLista(nodo * &L)
+
 {
     L = NULL;
 }
@@ -14,6 +15,7 @@ void Supervisores::crearLista(nodo * &L)
 void Supervisores::destruirLista(nodo * &L)
 {
     nodo * aux = L;
+
     while (aux != NULL)
     {
         L = aux->sig;
@@ -26,6 +28,7 @@ void Supervisores::destruirLista(nodo * &L)
 bool Supervisores::PerteneceLista(nodo * L, int cedula)
 {
     bool esta = false;
+
     while (!esta && L != NULL)
     {
         if (cedula == L -> info->getCedula())
@@ -39,6 +42,7 @@ bool Supervisores::PerteneceLista(nodo * L, int cedula)
 void Supervisores::insFrontEnLista(nodo * &L,Supervisor * sup)
 {
     nodo * aux = new nodo;
+
     aux->info = sup;
     aux->sig = L;
     L = aux;
@@ -57,6 +61,7 @@ Supervisores::Supervisores()
     //  crear diccionario vacio
     for(int i=0;i<B;i++)
         crearLista(hSupervisores[i]);
+
 }
 
 Supervisores::~Supervisores()
@@ -73,6 +78,7 @@ bool Supervisores::member(int ced)
 }
 
 //Precondici�n: !member(H,DarClave(e))
+
 void Supervisores::insert(Supervisor * s)
 {
     int ced = s->getCedula();
@@ -86,5 +92,6 @@ Supervisor * Supervisores::find(int ced)
     int cubeta = h(ced);
     return obtenerEnLista (hSupervisores[cubeta],ced);
 }
+
 
 

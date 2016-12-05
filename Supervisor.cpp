@@ -6,12 +6,19 @@ Supervisor::Supervisor(int ced,String nom,String barr,int man):Persona(ced,nom) 
 }
 String Supervisor:: getTipoPersona(){
     return "Supervisor";
+
 }
 
 void Supervisor:: listarPersona() {
 
 }
-Supervisor::~Supervisor()
-{
-    //dtor
+Supervisor::~Supervisor(){}
+
+String Supervisor::getBarrio() {
+    return barrio;
 }
+
+int Supervisor::getManzana() {
+    return manzana;
+}
+
