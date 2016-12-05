@@ -66,7 +66,8 @@ Vendedores::Vendedores() {
 bool Vendedores:: member(int ced) {
     return perteneceEnArbol (ABB, ced);
 }
-bool Vendedores:: insert(Vendedor * vend) {
+
+void Vendedores:: insert(Vendedor * vend) {
     insertEnArbol (ABB, vend);
 }
 Vendedor * Vendedores:: find(int ced) {

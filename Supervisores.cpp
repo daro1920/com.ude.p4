@@ -7,7 +7,6 @@ int Supervisores::h(int num)
 }
 
 void Supervisores::crearLista(nodo * &L)
-
 {
     L = NULL;
 }
@@ -78,7 +77,6 @@ bool Supervisores::member(int ced)
 }
 
 //Precondici�n: !member(H,DarClave(e))
-
 void Supervisores::insert(Supervisor * s)
 {
     int ced = s->getCedula();
@@ -93,5 +91,27 @@ Supervisor * Supervisores::find(int ced)
     return obtenerEnLista (hSupervisores[cubeta],ced);
 }
 
+void Supervisores::cargarIterador ( Iterador &iter) {
+    for (int i=0;i<B;i++){
+        cargarLista(hSupervisores[i],iter);
+    }
+}
 
+Iterador Supervisores::getIteradorSupervisores(){
+    Iterador iter;
+    cargarIterador ( iter);
+    return iter;
+}
 
+void Supervisores::cargarLista(nodo * L,Iterador &iter)
+{
+    nodo * aux = L;
+
+    while (aux != NULL)
+    {
+        L = aux->sig;
+        iter.insertar (aux->info);
+        aux = L;
+    }
+    L = aux;
+}

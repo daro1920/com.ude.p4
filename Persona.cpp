@@ -14,6 +14,7 @@ String Persona::getNombre() {
 }
 void Persona::listarPersona() {
     cout << "\n Cedula" << cedula ;
-    cout << "\n Nombre " ; nombre.print() ;
+    cout << " - ";
+    cout << "Nombre " ; nombre.print() ;
 }
 Persona:: ~Persona(){}

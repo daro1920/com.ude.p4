@@ -3,8 +3,9 @@
 CapaLogica::CapaLogica(): diccioSupervisores(),diccioVendedores(){}
 
 void CapaLogica:: nuevoSupervisor(int ced,String nom,String barr,int man,bool &error) {
-    Persona * sup = new Supervisor(ced,nom,barr,man);
+    Supervisor * sup = new Supervisor(ced,nom,barr,man);
     //diccioSupervisores Meter al diccionario
+    diccioSupervisores.insert(sup);
 }
 void CapaLogica:: nuevoVendedorFijo(int ced,String nom,float sBase,int cVentas,float pl,int cedSup,bool &error) {
     //Supervisor * sup = diccioSupervisores.find(cedSup);
@@ -18,7 +19,8 @@ void CapaLogica:: nuevoVendedorZafral(int ced,String nom,float sBase,int cVentas
     Vendedor* venZafral = new Zafral(ced,nom,sBase,cVentas,sup,com,fch);
     diccioVendedores.insert(venZafral);
 }
-Iterador CapaLogica:: getIteradorSupervisores() {
+Iterador CapaLogica::getIteradorSupervisores(){
+return diccioSupervisores.getIteradorSupervisores();
     //return diccioSupervisores.listarSupervisores();
 }
 Iterador CapaLogica:: getIteradorVendedores(){

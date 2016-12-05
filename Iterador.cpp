@@ -29,4 +29,11 @@
      actual = actual -> sig;
      return resu;
  }
- Iterador :: ~Iterador (){}
+ Iterador :: ~Iterador (){
+    Nodo * aux = prim;
+    while (aux != NULL){
+        prim = prim->sig;
+        delete aux;
+        aux = prim;
+    }
+ }

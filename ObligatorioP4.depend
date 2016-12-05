@@ -97,3 +97,103 @@
 	"Zafral.h"
 	<iostream>
 
+1480953567 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\capalogica.cpp
+	"CapaLogica.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\capalogica.h
+	"Supervisores.h"
+	"Vendedores.h"
+	"Vendedor.h"
+	"Fecha.h"
+	"Fijo.h"
+	"Zafral.h"
+	"Iterador.h"
+
+1480940703 c:\users\jose\desktop\p4\repositorio\com.ude.p4\supervisores.h
+	"Supervisor.h"
+	"Iterador.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\supervisor.h
+	"String.h"
+	"Persona.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\string.h
+	<stdio.h>
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\persona.h
+	"String.h"
+	<stdio.h>
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\iterador.h
+	"Persona.h"
+	<stdio.h>
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\vendedores.h
+	"Vendedor.h"
+	"Iterador.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\vendedor.h
+	"Persona.h"
+	"Supervisor.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\fecha.h
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\fijo.h
+	<stdio.h>
+	"Vendedor.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\zafral.h
+	"Vendedor.h"
+	"Fecha.h"
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\fecha.cpp
+	"Fecha.h"
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\fijo.cpp
+	"Fijo.h"
+	<iostream>
+
+1480941532 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\iterador.cpp
+	"Iterador.h"
+
+1480955741 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"String.h"
+	"CapaLogica.h"
+	"Menu.h"
+	"CapaLogica.h"
+
+1480933024 c:\users\jose\desktop\p4\repositorio\com.ude.p4\menu.h
+	<stdio.h>
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\menu.cpp
+	"Menu.h"
+
+1480939141 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\persona.cpp
+	"Persona.h"
+	<iostream>
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\string.cpp
+	"String.h"
+	<iostream>
+	"String.h"
+
+1480965115 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\supervisor.cpp
+	"Supervisor.h"
+	<iostream>
+
+1480945029 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\supervisores.cpp
+	"Supervisores.h"
+
+1480938106 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\vendedor.cpp
+	"Vendedor.h"
+	<iostream>
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\vendedores.cpp
+	"Vendedores.h"
+
+1480933024 source:c:\users\jose\desktop\p4\repositorio\com.ude.p4\zafral.cpp
+	"Zafral.h"
+	<iostream>
+

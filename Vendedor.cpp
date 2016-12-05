@@ -27,6 +27,7 @@ using namespace std;
         cout << cantVentas;
         supervisor->listarPersona();
     }
+
     String Vendedor:: getTipoPersona(){
         return "Vendedor";
     }

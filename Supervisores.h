@@ -22,13 +22,15 @@ class Supervisores
         void insFrontEnLista(nodo * &, Supervisor *);
 
         Supervisor * obtenerEnLista(nodo *,int);
+        void cargarIterador (Iterador &);
+        void cargarLista(nodo *, Iterador &);
 
     public:
         Supervisores();
         bool member(int);
         void insert(Supervisor *);
         Supervisor * find(int);
-        Iterador listarSupervisores();
+        Iterador getIteradorSupervisores();
 
         ~Supervisores();
 
