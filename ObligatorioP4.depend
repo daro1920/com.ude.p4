@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
+1480991447 source:c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.cpp
 	"CapaLogica.h"
 
+1480986427 c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.h
 	"Supervisores.h"
 	"Vendedores.h"
 	"Vendedor.h"
@@ -9,6 +11,7 @@
 	"Zafral.h"
 	"Iterador.h"
 
+1480986247 c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.h
 	"Supervisor.h"
 	"Iterador.h"
 
@@ -27,6 +30,7 @@
 	"Persona.h"
 	<stdio.h>
 
+1480991523 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.h
 	"Vendedor.h"
 	"Iterador.h"
 
@@ -47,11 +51,14 @@
 1480981913 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
 	"Fecha.h"
 
+1480990337 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
 	"Fijo.h"
 	<iostream>
 
+1480988808 source:c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.cpp
 	"Iterador.h"
 
+1480992008 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"String.h"
@@ -78,13 +85,17 @@
 	"Supervisor.h"
 	<iostream>
 
+1480986519 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.cpp
 	"Supervisores.h"
 
+1480990278 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
 	"Vendedor.h"
 	<iostream>
 
+1480991931 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.cpp
 	"Vendedores.h"
 
+1480990306 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
 	"Zafral.h"
 	<iostream>
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
- #include "String.h"
+#include "String.h"
 #include "CapaLogica.h"
 #include "Menu.h"
 #include "CapaLogica.h"
@@ -8,7 +8,7 @@
 int main() {
 
     printf ("\n Bienvenido al programa de registro y control de vendedores ");
-    
+
     int opcion1 ;
     bool termino = false;
 
@@ -20,8 +20,17 @@ int main() {
 int k=0;
 
     Iterador iterSupervisores;
-    Iterador iterVendedores;
+    Iterador iterVendedores ;
     Vendedor * vend;
+
+    int cedula;
+    int manzana;
+    String nombre;
+    String barrio;
+    float sueldo;
+    int cVentas;
+    int cedulaSup;
+    int plus;
 
     CapaLogica capaLogica;
     Menu menu;
@@ -29,16 +38,58 @@ int k=0;
     while(opcion1 != 9 && !termino) {
         switch (opcion1) {
             case 1:  // ingresar un supervisor
-                capaLogica.nuevoSupervisor(1122,"Barrios","PeÒarol",10,error) ;
-                capaLogica.nuevoSupervisor(5566,"Lopez","Union",8,error) ;
+
+                printf ("\n Ingrese la cedula: ");
+                scanf ("%d", &cedula);
+                fflush( stdin );
+
+                printf ("\n Ingrese la nombre: ");
+                nombre.scan();
+                fflush( stdin );
+
+                printf ("\n Ingrese barrio ");
+                barrio.scan();
+                fflush( stdin );
+
+                printf ("\n Ingrese la manzana ");
+                scanf ("%d", &manzana);
+                fflush( stdin );
+
+                capaLogica.nuevoSupervisor(cedula,nombre,barrio,manzana,error) ;
 
                     break;
             case 2:  // ingresar un vendedor
-                capaLogica.nuevoVendedorFijo(3111,"Vendedor1",2000,40,1.5,1122,error) ;
-                capaLogica.nuevoVendedorZafral(4111,"Vendedor2",3500,25,10,Fecha(),5566,error) ;
-                    break;
+
+
+                printf ("\n Ingrese la cedula: ");
+                scanf ("%d", &cedula);
+                fflush( stdin );
+
+                printf ("\n Ingrese la nombre: ");
+                nombre.scan();
+                fflush( stdin );
+
+                printf ("\n Ingrese sueldo ");
+                scanf ("%d", &sueldo);
+                fflush( stdin );
+
+                printf ("\n Ingrese total de ventas ");
+                scanf ("%d", &cVentas);
+                fflush( stdin );
+
+                printf ("\n Ingrese la cedula del supervisor ");
+                scanf ("%d", &cedulaSup);
+                fflush( stdin );
+
+                printf ("\n Ingrese el plus ");
+                scanf ("%d", &plus);
+                fflush( stdin );
+
+
+                capaLogica.nuevoVendedorFijo(cedula,nombre,sueldo,cVentas,plus,cedulaSup,error) ;
+                break;
             case 3:  // listar supervisores
-                    capaLogica.getIteradorSupervisores(iterSupervisores);
+                    iterSupervisores = capaLogica.getIteradorSupervisores();
                     while (iterSupervisores.hayMasPersonas()){
                         Persona * sup = iterSupervisores.proximaPersona();
                         sup->listarPersona();
@@ -46,28 +97,44 @@ int k=0;
 
                     break;
             case 4:  // listar vendedores
-                capaLogica.getIteradorVendedores(iterVendedores);
+                iterVendedores = capaLogica.getIteradorVendedores();
                 while (iterVendedores.hayMasPersonas()){
                     Persona * vend = iterVendedores.proximaPersona();
                     vend->listarPersona();
                 }
-                    break;
+                break;
             case 5:  // listar vendedor con supervisor
-                vend = capaLogica.getVendedor(3111,error);
+                printf ("\n Ingrese la cedula: ");
+                scanf ("%d", &cedula);
+                fflush( stdin );
+
+                vend = capaLogica.getVendedor(cedula,error);
                 if(!error){
                     vend->listarPersona();
                     Supervisor * sup = vend->getSupervisor();
                     sup->listarPersona();
-                    
+
                 }else{
                     printf("\nNo existe vendedor");
                 }
                     break;
-            case 6:  // listar los jugadores por departamento
+            case 6:  // Registrar cantidad de ventas de la semana de un vendedor
+                    printf ("\n Ingrese la cedula: ");
+                    scanf ("%d", &cedula);
+                    fflush( stdin );
+
+                    printf ("\n Ingrese la cantidad de ventas: ");
+                    scanf ("%d", &cVentas);
+                    fflush( stdin );
+
+                    capaLogica.regCantVentas(cedula,cVentas,error);
                     break;
-            case 7:  // listar los jugadores por departamento
+            case 7:  // Monto de sueldos a pagar de los vendedores
+
+                    printf ("\n Monto a pagar ",capaLogica.montoPagar());
                     break;
-            case 8:  // listar los jugadores por departamento
+            case 8:  // Contar total de zafrales
+                    printf ("\n Cantidad de zafrales ",capaLogica.montoZafrales());
                     break;
             case 9:  // listar los jugadores por departamento
                     termino = true;
