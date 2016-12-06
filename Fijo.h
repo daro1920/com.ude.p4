@@ -16,6 +16,7 @@ class Fijo : public Vendedor
         float getSueldoBase();
         float getPlus();
         void listarPersona();
+        void listarPersonaEspecial();
         String getTipoVendedor();
         ~Fijo();
 };

@@ -19,10 +19,16 @@ float Fijo:: getSueldoBase() {
     } else {
         total = suelVend + plus*2;
     }
-    return total;
+    return total*1.0;
 }
 float Fijo:: getPlus() {
     return plus;
+}
+
+void Fijo:: listarPersonaEspecial() {
+    Vendedor::listarPersonaEspecial();
+    cout << "-Tipo de vendedor: Fijo";
+
 }
 void Fijo:: listarPersona() {
     Vendedor::listarPersona();
@@ -30,7 +36,7 @@ void Fijo:: listarPersona() {
 
 }
 String Fijo:: getTipoVendedor() {
-    return "1";
+    return "Fijo";
 }
 
 Fijo::~Fijo(){}

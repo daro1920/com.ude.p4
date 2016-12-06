@@ -15,6 +15,7 @@ class Persona
         int getCedula();
         String getNombre();
         virtual void listarPersona();
+        virtual void listarPersonaEspecial();
         virtual String getTipoPersona() =0;
         virtual ~Persona();
 

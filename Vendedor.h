@@ -14,11 +14,12 @@ class Vendedor : public Persona
         Supervisor * supervisor;
     public:
         Vendedor(int,String,float,int,Supervisor *);
-        float getSueldoBase();
+        virtual float getSueldoBase();
         int getCantVentas();
         void setCantVentas(int);
         Supervisor* getSupervisor();
         virtual void listarPersona();
+        virtual void listarPersonaEspecial();
         String getTipoPersona();
         virtual String getTipoVendedor() =0;
         virtual ~Vendedor();

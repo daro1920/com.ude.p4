@@ -17,5 +17,6 @@ void Menu:: menu1 (int &opcion1) {
 
     printf(" Ingrese la opcion: ");
     scanf("%d", &opcion1);
+    fflush(stdin);
 
 }

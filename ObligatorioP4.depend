@@ -22,7 +22,7 @@
 1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\string.h
 	<stdio.h>
 
-1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\persona.h
+1481018311 c:\ude\2do\p4\obligatorio\com.ude.p4\persona.h
 	"String.h"
 	<stdio.h>
 
@@ -34,45 +34,45 @@
 	"Vendedor.h"
 	"Iterador.h"
 
-1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.h
+1481024799 c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.h
 	"Persona.h"
 	"Supervisor.h"
 
-1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.h
+1481026792 c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.h
 
-1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
+1481018463 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
 	<stdio.h>
 	"Vendedor.h"
 
-1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.h
+1481018394 c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.h
 	"Vendedor.h"
 	"Fecha.h"
 
-1480981913 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
+1481026792 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
 	"Fecha.h"
 
-1480990337 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
+1481027209 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
 	"Fijo.h"
 	<iostream>
 
 1480988808 source:c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.cpp
 	"Iterador.h"
 
-1480992008 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
+1481028463 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"String.h"
 	"CapaLogica.h"
 	"Menu.h"
-	"CapaLogica.h"
+	"Fecha.h"
 
 1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\menu.h
 	<stdio.h>
 
-1480981913 source:c:\ude\2do\p4\obligatorio\com.ude.p4\menu.cpp
+1481027967 source:c:\ude\2do\p4\obligatorio\com.ude.p4\menu.cpp
 	"Menu.h"
 
-1480981913 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
+1481019129 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
 	"Persona.h"
 	<iostream>
 
@@ -88,14 +88,14 @@
 1480986519 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.cpp
 	"Supervisores.h"
 
-1480990278 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
+1481025174 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
 	"Vendedor.h"
 	<iostream>
 
 1480991931 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.cpp
 	"Vendedores.h"
 
-1480990306 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
+1481027209 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
 	"Zafral.h"
 	<iostream>
 

@@ -10,7 +10,7 @@ Zafral:: Zafral(int ced,String nombre,float sBase,int cVentas ,Supervisor * sup,
 float Zafral:: getSueldoBase(){
     float sulVend = Vendedor::getSueldoBase();
     int cVentas = Vendedor::getCantVentas();
-    return (comision*cVentas) + sulVend;
+    return (comision*(cVentas*1.0)) + sulVend;
 }
 float Zafral:: getComision() {
     return comision;
@@ -19,17 +19,22 @@ Fecha Zafral:: getFecha() {
     return fechaVto;
 }
 
+void Zafral:: listarPersonaEspecial() {
+    Vendedor::listarPersonaEspecial();
+    cout << "-Tipo de Vendedor: Zafral";
+}
+
 void Zafral:: listarPersona() {
     Vendedor::listarPersona();
     int dia = fechaVto.getDia();
     int mes = fechaVto.getMes();
     int anio = fechaVto.getAnio();
     cout << "\n Fecha "<< dia << "'\'" << mes<< "'\'" <<anio;
-
-
 }
+
+
 String Zafral:: getTipoVendedor() {
-    return "2";
+    return "Zafral";
 }
 
 Zafral::~Zafral(){}

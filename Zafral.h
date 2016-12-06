@@ -17,6 +17,7 @@ class Zafral : public Vendedor {
         float getComision();
         Fecha getFecha();
         void listarPersona();
+        void listarPersonaEspecial();
         String getTipoVendedor();
         ~Zafral();
 };

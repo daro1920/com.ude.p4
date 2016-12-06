@@ -21,10 +21,15 @@ using namespace std;
     Supervisor * Vendedor:: getSupervisor() {
         return supervisor;
     }
+
+    void Vendedor::listarPersonaEspecial() {
+        Persona::listarPersonaEspecial();
+    }
+
     void Vendedor::listarPersona() {
         Persona::listarPersona();
-        cout << sueldosBase;
-        cout << cantVentas;
+        cout << "-sueldo base " << getSueldoBase();
+        cout << "-cantidad ventas " << getCantVentas();
         getTipoVendedor().print();
         supervisor->listarPersona();
     }
