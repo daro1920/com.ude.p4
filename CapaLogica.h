@@ -19,8 +19,8 @@ class CapaLogica
         void nuevoSupervisor(int ,String ,String ,int ,bool &);
         void nuevoVendedorFijo(int ,String ,float ,int ,float ,int ,bool &);
         void nuevoVendedorZafral(int ,String ,float ,int ,float ,Fecha ,int ,bool &);
-        void getIteradorSupervisores(Iterador &);
-        void getIteradorVendedores(Iterador &);
+        Iterador getIteradorSupervisores();
+        Iterador getIteradorVendedores();
         Vendedor * getVendedor(int,bool &);
         void regCantVentas(int,int,bool &);
         float  montoPagar();

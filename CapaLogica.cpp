@@ -4,28 +4,25 @@ CapaLogica::CapaLogica(): diccioSupervisores(),diccioVendedores(){}
 
 void CapaLogica:: nuevoSupervisor(int ced,String nom,String barr,int man,bool &error) {
     Supervisor * sup = new Supervisor(ced,nom,barr,man);
-    
-    int algo=1;
     //diccioSupervisores Meter al diccionario
     diccioSupervisores.insert(sup);
 }
 void CapaLogica:: nuevoVendedorFijo(int ced,String nom,float sBase,int cVentas,float pl,int cedSup,bool &error) {
-    //Supervisor * sup = diccioSupervisores.find(cedSup);
-    Supervisor* sup = new Supervisor(1122,"Barrios","Peñarol",10);
+    Supervisor * sup = diccioSupervisores.find(cedSup);
     Vendedor* venFijo = new Fijo(ced,nom,sBase,cVentas,sup,pl);
     diccioVendedores.insert(venFijo);
 }
 void CapaLogica:: nuevoVendedorZafral(int ced,String nom,float sBase,int cVentas,float com,Fecha fch,int cedSup,bool &error) {
     //Supervisor * sup = diccioSupervisores.find(cedSup);
-    Supervisor* sup = new Supervisor(5566,"Lopez","Union",8);
+    Supervisor * sup = diccioSupervisores.find(cedSup);
     Vendedor* venZafral = new Zafral(ced,nom,sBase,cVentas,sup,com,fch);
     diccioVendedores.insert(venZafral);
 }
-void CapaLogica::getIteradorSupervisores( Iterador &iterSupervisores){
-    diccioSupervisores.getIteradorSupervisores(iterSupervisores);
+Iterador CapaLogica::getIteradorSupervisores(){
+    return diccioSupervisores.getIteradorSupervisores();
 }
-void CapaLogica:: getIteradorVendedores( Iterador &iterVendedores){
-    diccioVendedores.getIteradorVendedores(iterVendedores);
+Iterador CapaLogica:: getIteradorVendedores( ){
+    return diccioVendedores.getIteradorVendedores();
 }
 Vendedor * CapaLogica:: getVendedor(int ced,bool &error) {
     Vendedor * ven;
@@ -51,5 +48,5 @@ float CapaLogica:: montoPagar() {
 
 int CapaLogica:: montoZafrales() {
 
-    return(diccioVendedores.getMontoTotal());
+    return(diccioVendedores.getCantidadZafrales());
 }

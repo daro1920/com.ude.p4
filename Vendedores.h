@@ -26,6 +26,7 @@ class Vendedores
          void cargarIterador (aVendedor *, Iterador &);
          // carga el iterador recorriendo el árbol en orden
          int getMonto(aVendedor *);
+         int getTotalZafrales(aVendedor *);
 
     public:
         Vendedores();
@@ -34,7 +35,8 @@ class Vendedores
         Vendedor * find(int);
         void modify(int);
         int getMontoTotal();
-        void getIteradorVendedores(Iterador &);
+        int getCantidadZafrales();
+        Iterador getIteradorVendedores();
 
 };
 

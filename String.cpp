@@ -108,21 +108,19 @@ return aux;
     }
     s1[i]='\0';
 }
- void String :: scan()
- {
- char aux[MAX];
- char c = cin.get();
- int i=0;
- while (c!='\n' && i<MAX-1)
-{
- aux[i] = c;
- i++;
- c = cin.get();
+void String :: scan() {
+    char aux[MAX];
+    char c = cin.get();
+    int i=0;
+    while (c!='\n' && i<MAX-1) {
+        aux[i] = c;
+        i++;
+        c = cin.get();
+    }
+    aux[i]='\0';
+    cadena = new char[i+1];
+    strcpy(cadena,aux);
 }
-aux[i]='\0';
-cadena = new char[i+1];
-strcpy(cadena,aux);
- }
  void String :: print()
  {
  cout << cadena;

@@ -99,8 +99,10 @@ void Supervisores::cargarIterador ( Iterador &iter) {
     }
 }
 
-void Supervisores::getIteradorSupervisores( Iterador &iterSupervisores){
-    cargarIterador ( iterSupervisores);
+Iterador Supervisores::getIteradorSupervisores( ){
+    Iterador iter;
+    cargarIterador ( iter);
+    return iter;
 }
 
 void Supervisores::cargarLista(nodo * L,Iterador &iter)

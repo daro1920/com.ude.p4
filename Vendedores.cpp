@@ -54,7 +54,28 @@ void Vendedores :: cargarIterador (aVendedor * a, Iterador &iter) {
 }
 int Vendedores :: getMonto(aVendedor * a){
 
-    return 10;
+    if(a == NULL){
+        return 0;
+    } else {
+        getMonto(a->hizq);
+        int monto = monto + a->info->getSueldoBase();
+        getMonto(a->hder);
+    }
+}
+
+int Vendedores:: getTotalZafrales(aVendedor * a) {
+
+    if(a == NULL){
+        return 0;
+    } else {
+        int monto = 0;
+        getTotalZafrales(a->hizq);
+        if(a->info->getTipoVendedor() == "2"){
+             monto = monto + 1;
+        }
+        getTotalZafrales(a->hder);
+        return monto;
+    }
 }
 
 
@@ -78,9 +99,16 @@ int Vendedores:: getMontoTotal() {
     return getMonto(ABB);
 }
 
+int Vendedores:: getCantidadZafrales() {
 
-void Vendedores:: getIteradorVendedores( Iterador &iterVendedores) {
-    cargarIterador (ABB, iterVendedores);
+    return getTotalZafrales(ABB);
+}
+
+
+Iterador Vendedores:: getIteradorVendedores() {
+    Iterador iter;
+    cargarIterador (ABB, iter);
+    return iter;
 }
 
 

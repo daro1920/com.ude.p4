@@ -31,7 +31,7 @@ class Supervisores
         bool member(int);
         void insert(Supervisor *);
         Supervisor * find(int);
-        void getIteradorSupervisores( Iterador &);
+        Iterador getIteradorSupervisores();
 
         ~Supervisores();
 

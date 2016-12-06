@@ -29,7 +29,7 @@ void Zafral:: listarPersona() {
 
 }
 String Zafral:: getTipoVendedor() {
-    return "Zafral";
+    return "2";
 }
 
 Zafral::~Zafral(){}

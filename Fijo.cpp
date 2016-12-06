@@ -27,9 +27,10 @@ float Fijo:: getPlus() {
 void Fijo:: listarPersona() {
     Vendedor::listarPersona();
     cout << "\n plus "<< plus;
+
 }
 String Fijo:: getTipoVendedor() {
-    return "Fijo";
+    return "1";
 }
 
 Fijo::~Fijo(){}
