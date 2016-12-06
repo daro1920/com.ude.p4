@@ -10,7 +10,7 @@ class Fijo : public Vendedor
 {
 
     private:
-        float plus;
+        float nplus;
     public:
         Fijo(int,String,float,int,Supervisor *,float);
         float getSueldoBase();

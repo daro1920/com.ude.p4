@@ -39,6 +39,8 @@
 		<Unit filename="Fijo.h" />
 		<Unit filename="Iterador.cpp" />
 		<Unit filename="Iterador.h" />
+		<Unit filename="Manejador.cpp" />
+		<Unit filename="Manejador.h" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
 		<Unit filename="Persona.cpp" />

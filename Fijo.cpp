@@ -4,7 +4,7 @@ using namespace std;
 
 Fijo::Fijo(int ced,String nombre,float sBase,int cVentas ,Supervisor * sup,float p):
     Vendedor( ced, nombre, sBase, cVentas , sup) {
-    plus = p;
+    nplus = p;
 }
 float Fijo:: getSueldoBase() {
 
@@ -15,14 +15,14 @@ float Fijo:: getSueldoBase() {
     if(cVentas<10){
         total = suelVend;
     } else if(cVentas >= 10 && cVentas <=20 ){
-        total = suelVend + plus;
+        total = suelVend + nplus;
     } else {
-        total = suelVend + plus*2;
+        total = suelVend + nplus*2;
     }
     return total*1.0;
 }
 float Fijo:: getPlus() {
-    return plus;
+    return nplus;
 }
 
 void Fijo:: listarPersonaEspecial() {
@@ -32,7 +32,7 @@ void Fijo:: listarPersonaEspecial() {
 }
 void Fijo:: listarPersona() {
     Vendedor::listarPersona();
-    cout << "\n plus "<< plus;
+    cout << "\n plus "<< nplus;
 
 }
 String Fijo:: getTipoVendedor() {
