@@ -18,6 +18,7 @@ int main() {
     Iterador iterVendedores ;
     Vendedor * vend;
 
+    int totalSupervisores = 0;
     int tipo;
     int cedula;
     int manzana;
@@ -40,10 +41,17 @@ int main() {
         if( (opcion1 >= 1) && (opcion1 <= 9) ){
         switch (opcion1) {
             case 1:  // ingresar un supervisor
-                CargarSupervisor(cedula,nombre,barrio,manzana);
-                capaLogica.nuevoSupervisor(cedula,nombre,barrio,manzana,error) ;
-                if (error) {
-                    printf( "no se ingreso");
+                totalSupervisores++ ;
+                if (totalSupervisores <= B) {
+                    CargarSupervisor(cedula,nombre,barrio,manzana);
+                    capaLogica.nuevoSupervisor(cedula,nombre,barrio,manzana,error) ;
+                    if (error) {
+                        totalSupervisores-- ;
+                        printf( "no se ingreso");
+                    }
+                }
+                else{
+                    printf( "no se pueden ingresar mas Supervisores");
                 }
                 break;
             case 2:  // ingresar un vendedor

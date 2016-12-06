@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 # include "Manejador.h"
-ç
+
 
 //Punto 1. ingresar jugadores
 void CargarSupervisor(int &cedula,String &nombre,String &barrio, int &manzana)

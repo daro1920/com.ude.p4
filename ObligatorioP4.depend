@@ -269,7 +269,7 @@
 	"Zafral.h"
 	"Iterador.h"
 
-1481053883 c:\users\jose\documents\github\com.ude.p4\supervisores.h
+1481066604 c:\users\jose\documents\github\com.ude.p4\supervisores.h
 	"Supervisor.h"
 	"Iterador.h"
 
@@ -349,7 +349,7 @@
 	"Zafral.h"
 	<iostream>
 
-1481062418 source:c:\users\jose\documents\github\com.ude.p4\main.cpp
+1481066530 source:c:\users\jose\documents\github\com.ude.p4\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"String.h"
@@ -362,6 +362,8 @@
 	"String.h"
 	"Fecha.h"
 
-1481060708 source:c:\users\jose\documents\github\com.ude.p4\manejador.cpp
+1481066530 source:c:\users\jose\documents\github\com.ude.p4\manejador.cpp
+	<stdio.h>
+	<stdlib.h>
 	"Manejador.h"
 
