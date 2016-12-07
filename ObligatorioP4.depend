@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1480991447 source:c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.cpp
+1481070836 source:c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.cpp
 	"CapaLogica.h"
 
 1480986427 c:\ude\2do\p4\obligatorio\com.ude.p4\capalogica.h
@@ -40,7 +40,7 @@
 
 1481026792 c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.h
 
-1481018463 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
+1481070836 c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.h
 	<stdio.h>
 	"Vendedor.h"
 
@@ -51,20 +51,21 @@
 1481026792 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fecha.cpp
 	"Fecha.h"
 
-1481027209 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
+1481072615 source:c:\ude\2do\p4\obligatorio\com.ude.p4\fijo.cpp
 	"Fijo.h"
 	<iostream>
 
 1480988808 source:c:\ude\2do\p4\obligatorio\com.ude.p4\iterador.cpp
 	"Iterador.h"
 
-1481028463 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
+1481070838 source:c:\ude\2do\p4\obligatorio\com.ude.p4\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"String.h"
 	"CapaLogica.h"
 	"Menu.h"
 	"Fecha.h"
+	"Manejador.h"
 
 1480981913 c:\ude\2do\p4\obligatorio\com.ude.p4\menu.h
 	<stdio.h>
@@ -72,7 +73,7 @@
 1481027967 source:c:\ude\2do\p4\obligatorio\com.ude.p4\menu.cpp
 	"Menu.h"
 
-1481019129 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
+1481072577 source:c:\ude\2do\p4\obligatorio\com.ude.p4\persona.cpp
 	"Persona.h"
 	<iostream>
 
@@ -81,21 +82,21 @@
 	<iostream>
 	"String.h"
 
-1480981913 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.cpp
+1481072581 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisor.cpp
 	"Supervisor.h"
 	<iostream>
 
 1480986519 source:c:\ude\2do\p4\obligatorio\com.ude.p4\supervisores.cpp
 	"Supervisores.h"
 
-1481025174 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
+1481071758 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedor.cpp
 	"Vendedor.h"
 	<iostream>
 
 1480991931 source:c:\ude\2do\p4\obligatorio\com.ude.p4\vendedores.cpp
 	"Vendedores.h"
 
-1481027209 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
+1481072593 source:c:\ude\2do\p4\obligatorio\com.ude.p4\zafral.cpp
 	"Zafral.h"
 	<iostream>
 
@@ -363,6 +364,15 @@
 	"Fecha.h"
 
 1481066530 source:c:\users\jose\documents\github\com.ude.p4\manejador.cpp
+	<stdio.h>
+	<stdlib.h>
+	"Manejador.h"
+
+1481070836 c:\ude\2do\p4\obligatorio\com.ude.p4\manejador.h
+	"String.h"
+	"Fecha.h"
+
+1481070836 source:c:\ude\2do\p4\obligatorio\com.ude.p4\manejador.cpp
 	<stdio.h>
 	<stdlib.h>
 	"Manejador.h"

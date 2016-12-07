@@ -27,12 +27,12 @@ float Fijo:: getPlus() {
 
 void Fijo:: listarPersonaEspecial() {
     Vendedor::listarPersonaEspecial();
-    cout << "-Tipo de vendedor: Fijo";
+    cout << " - Tipo de vendedor Fijo";
 
 }
 void Fijo:: listarPersona() {
     Vendedor::listarPersona();
-    cout << "\n plus "<< nplus;
+    cout << "\n - plus "<< nplus;
 
 }
 String Fijo:: getTipoVendedor() {

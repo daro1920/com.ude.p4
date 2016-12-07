@@ -14,13 +14,11 @@ String Persona::getNombre() {
     return nombre;
 }
 void Persona::listarPersonaEspecial() {
-     cout << "\n Cedula" << cedula ;
-    cout << " - ";
-    cout << "Nombre " ; nombre.print() ;
+    cout << "\n Cedula " << cedula ;
+    cout << " - Nombre " ; nombre.print() ;
 }
 void Persona::listarPersona() {
-    cout << "\n Cedula" << cedula ;
-    cout << " - ";
-    cout << "Nombre " ; nombre.print() ;
+    cout << "\n Cedula " << cedula ;
+    cout << " - Nombre " ; nombre.print() ;
 }
 Persona:: ~Persona(){}

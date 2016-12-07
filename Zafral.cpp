@@ -21,7 +21,7 @@ Fecha Zafral:: getFecha() {
 
 void Zafral:: listarPersonaEspecial() {
     Vendedor::listarPersonaEspecial();
-    cout << "-Tipo de Vendedor: Zafral";
+    cout << " - Tipo de Vendedor Zafral";
 }
 
 void Zafral:: listarPersona() {

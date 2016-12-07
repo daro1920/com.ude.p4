@@ -28,8 +28,8 @@ using namespace std;
 
     void Vendedor::listarPersona() {
         Persona::listarPersona();
-        cout << "-sueldo base " << getSueldoBase();
-        cout << "-cantidad ventas " << getCantVentas();
+        cout << "-Sueldo base " << getSueldoBase();
+        cout << "-Cantidad ventas " << getCantVentas();
         getTipoVendedor().print();
         supervisor->listarPersona();
     }
